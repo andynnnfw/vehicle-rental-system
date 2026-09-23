@@ -67,17 +67,17 @@ public class Main {
                                     System.out.println("Erro ao cadastrar: " + e.getMessage());
                                 }
                             } else if (tipoVeiculo == 2) {
-                                System.out.print("coloque o MODELO da moto: ");
+                                System.out.print("coloque o modelo da moto: ");
                                 String modelo = scanner.nextLine();
 
-                                System.out.print("coloque a PLACA da moto : ");
+                                System.out.print("coloque a placa da moto : ");
                                 String placa = scanner.nextLine();
 
-                                System.out.print("coloque o ANO da moto: ");
+                                System.out.print("coloque o ano da moto: ");
                                 int ano = scanner.nextInt();
                                 scanner.nextLine();
 
-                                System.out.print("coloque a quantidade de CILINDRADAS (ex: 120, 200): ");
+                                System.out.print("coloque a quantidade de cilindradas (ex: 120, 200): ");
                                 int cilindradas = scanner.nextInt();
                                 scanner.nextLine();
 
@@ -98,7 +98,7 @@ public class Main {
                         estoque.listarTodos();
                         break;
                     case 3:
-                        System.out.print("Introduza a placa do veículo a alugar: ");
+                        System.out.print("coloque a placa do veículo a alugar: ");
                         String placaAlugar = scanner.nextLine();
                         try {
                             Alugavel veiculoAlugar = estoque.buscarPorPlaca(placaAlugar);
@@ -108,7 +108,7 @@ public class Main {
                         }
                         break;
                     case 4:
-                        System.out.print("Introduza a placa do veículo a devolver: ");
+                        System.out.print("coloque a placa do veículo a devolver: ");
                         String placaDevolver = scanner.nextLine();
                         try {
                             Alugavel veiculoDevolver = estoque.buscarPorPlaca(placaDevolver);
@@ -118,7 +118,7 @@ public class Main {
                         }
                         break;
                     case 5:
-                        System.out.print("Introduza a placa do veículo a remover: ");
+                        System.out.print("coloque a placa do veículo a remover: ");
                         String placaRemover = scanner.nextLine();
                         estoque.remover(placaRemover);
                         break;
